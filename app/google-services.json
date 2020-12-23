@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "603616153240",
+    "project_id": "atom-assignment-ee448",
+    "storage_bucket": "atom-assignment-ee448.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:603616153240:android:a693ccf583c71f24188aed",
+        "android_client_info": {
+          "package_name": "com.example.atom_assignment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "603616153240-a1p57hc5ikgem1thflcivuj18t1fsq33.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZ6CjXLLq3sl_nByqILOZDMx9jLIbWFCc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "603616153240-a1p57hc5ikgem1thflcivuj18t1fsq33.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
