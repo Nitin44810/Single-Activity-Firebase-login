@@ -38,7 +38,6 @@ class MainActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance() // Initialize Firebase Auth
 
         if(auth.currentUser != null){
-            Toast.makeText(this,"Welcome back "+auth.currentUser!!.email,Toast.LENGTH_SHORT).show()
             updateUI(auth.currentUser!!)
         }else {
             signInOptions()
@@ -59,7 +58,7 @@ class MainActivity : AppCompatActivity() {
     private fun updateUI(currentUser: FirebaseUser) {
         sign_out.isEnabled = true
         email_text.isEnabled = true
-        email_text.text = "Hi "+currentUser.email
+        email_text.text = "Hi "+currentUser.displayName
     }
 
 
@@ -73,7 +72,7 @@ class MainActivity : AppCompatActivity() {
 
                 sign_out.isEnabled = true
                 email_text.isEnabled = true
-                email_text.text = "Hi "+user.email
+                email_text.text = "Hi "+user.displayName
             }
             else{
                 Toast.makeText(this,""+response!!.error!!.message,Toast.LENGTH_SHORT).show()
